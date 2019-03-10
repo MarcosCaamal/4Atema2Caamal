@@ -30,8 +30,7 @@ public class ctrlBiseccion {
     }
     
     public double getEvaluacion(double x){
-        //return Math.pow(x, 3)+4*Math.pow(x, 2)-10;
-        return (0.2969*Math.sqrt(x))-(0.126*x)-(0.3516*Math.pow(x,2))+(0.2843*Math.pow(x,3))-(0.1015*Math.pow(x,4))-0.1;
+        return Math.pow(x, 3)+4*Math.pow(x, 2)-10;
     
     }
     

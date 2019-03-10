@@ -22,8 +22,7 @@ public class ctrlAproximaciones {
     }
     
     private double getEvaluacionGxi(double xi){
-       // return Math.pow(Math.E,(-xi));
-       return (0.08314*215)/(70+(1.463/(Math.pow(xi, 2))))+0.0394;
+        return Math.pow(Math.E,(-xi));
     }
     
     private double getError(double gxi, double xi){

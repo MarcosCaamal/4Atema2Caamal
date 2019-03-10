@@ -15,17 +15,11 @@ public class ctrlNewton {
     }
     
     private double getEvaluacionFxi(double xi){
-       // return Math.pow(Math.E, (-xi))-xi;
-       double numerador =(1-xi)*Math.pow(3+xi, 0.5);
-       double denominador= xi*Math.pow(xi+1, 0.5)*Math.pow(5, 0.5);
-       return (numerador/denominador)-3.06;
+        return Math.pow(Math.E, (-xi))-xi;
     }
     
     private double getEvaluacionDerivadaFxi(double xi){
-        //return -(Math.pow((Math.E), (-xi)))-1;
-        double numerador= Math.pow(xi,3)+(2*Math.pow(xi,2))-(13*xi)-6;
-        double denominador=2*Math.pow(5,0.5)*Math.pow(xi+1, 2)*Math.pow(xi+3, 0.5);
-        return numerador/denominador;
+        return -(Math.pow((Math.E), (-xi)))-1;
     }
     
     private double getXi1(double xi, double fxi, double dfxi){
