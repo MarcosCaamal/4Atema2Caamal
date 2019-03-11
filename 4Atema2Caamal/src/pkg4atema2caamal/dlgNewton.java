@@ -50,7 +50,14 @@ public class dlgNewton extends javax.swing.JDialog {
         lblIteraciones.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblIteraciones.setText("Max. Iteraciones:");
 
-        btnNewton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        txtXi.setBackground(new java.awt.Color(255, 255, 204));
+
+        txtError.setBackground(new java.awt.Color(255, 255, 204));
+
+        txtIteraciones.setBackground(new java.awt.Color(255, 255, 204));
+
+        btnNewton.setBackground(new java.awt.Color(102, 255, 204));
+        btnNewton.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
         btnNewton.setText("Calcular");
         btnNewton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

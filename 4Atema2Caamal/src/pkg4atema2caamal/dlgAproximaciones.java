@@ -65,13 +65,19 @@ public class dlgAproximaciones extends javax.swing.JDialog {
         lblIteraciones.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblIteraciones.setText("Max. Iteraciones");
 
+        txtXi.setBackground(new java.awt.Color(255, 255, 204));
         txtXi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtXiActionPerformed(evt);
             }
         });
 
-        btnAproximaciones.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        txtError.setBackground(new java.awt.Color(255, 255, 204));
+
+        txtIteraciones.setBackground(new java.awt.Color(255, 255, 204));
+
+        btnAproximaciones.setBackground(new java.awt.Color(102, 255, 204));
+        btnAproximaciones.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
         btnAproximaciones.setText("Calcular");
         btnAproximaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

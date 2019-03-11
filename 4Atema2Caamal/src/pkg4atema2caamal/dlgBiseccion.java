@@ -59,7 +59,8 @@ public class dlgBiseccion extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 153));
 
-        btnBiseccion.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnBiseccion.setBackground(new java.awt.Color(102, 255, 204));
+        btnBiseccion.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
         btnBiseccion.setText("Calcular");
         btnBiseccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,17 +80,23 @@ public class dlgBiseccion extends javax.swing.JDialog {
         lblIeraciones.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblIeraciones.setText("Max. Iteraciones: ");
 
+        txtXi.setBackground(new java.awt.Color(255, 255, 204));
         txtXi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtXiActionPerformed(evt);
             }
         });
 
+        txtXs.setBackground(new java.awt.Color(255, 255, 204));
         txtXs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtXsActionPerformed(evt);
             }
         });
+
+        txtError.setBackground(new java.awt.Color(255, 255, 204));
+
+        txtIteraciones.setBackground(new java.awt.Color(255, 255, 204));
 
         tablaBiseccion.setBackground(new java.awt.Color(204, 204, 204));
         tablaBiseccion.setModel(new javax.swing.table.DefaultTableModel(
@@ -104,7 +111,6 @@ public class dlgBiseccion extends javax.swing.JDialog {
             }
         ));
         tablaBiseccion.setCellSelectionEnabled(true);
-        tablaBiseccion.setColumnSelectionAllowed(true);
         tablaBiseccion.setEnabled(false);
         tablaBiseccion.setGridColor(new java.awt.Color(204, 204, 204));
         jScrollPane2.setViewportView(tablaBiseccion);
