@@ -6,6 +6,7 @@
 package pkg4atema2caamal;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -86,7 +87,7 @@ public class ctrlBiseccion {
             }
         }
         else{
-            //System.out.println("No hay solucion");
+            JOptionPane.showMessageDialog(null,"NO HAY SOLUCION, RANGO NO VALIDO");
             listaSoluciones=null;
         }
             

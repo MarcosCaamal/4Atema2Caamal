@@ -5,6 +5,8 @@
  */
 package pkg4atema2caamal;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author m
@@ -144,6 +146,7 @@ public class dlgSecante extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSecanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSecanteActionPerformed
+        try{
         double Xi=Double.parseDouble(txtX0.getText().trim());
         double Xs=Double.parseDouble(txtX1.getText().trim());
         double Error=Double.parseDouble(txtError.getText().trim());
@@ -151,6 +154,13 @@ public class dlgSecante extends javax.swing.JDialog {
         ctrlSecante ctrl = new ctrlSecante(Xi,Xs,Error,I);
         tablaSecante tabla = ctrl.getTablaSecante();
         this.tablaSecante.setModel(tabla);
+        }catch(IllegalArgumentException ex){ 
+            JOptionPane.showMessageDialog(null,"INGRESA LOS DATOS, POR FAVOR");
+            txtX0.setText(null); 
+            txtX1.setText(null);
+            txtError.setText(null);
+            txtIteraciones.setText(null);
+        }
     }//GEN-LAST:event_btnSecanteActionPerformed
 
     /**

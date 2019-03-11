@@ -2,6 +2,7 @@
 package pkg4atema2caamal;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 
 public class ctrlSecante {
@@ -66,7 +67,9 @@ public class ctrlSecante {
               ximenosuno=xi;
               xi=ximasuno;
               i++;
-              
+              if(i>iteraciones && errorCalculado>errorDeseado){
+                  JOptionPane.showMessageDialog(null, "NO SE ENCONTRÓ LA RAÍZ");
+              }
               listaSoluciones.add(fila);
           }
           return listaSoluciones;

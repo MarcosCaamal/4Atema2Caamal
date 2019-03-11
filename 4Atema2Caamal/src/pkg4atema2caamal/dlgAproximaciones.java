@@ -5,6 +5,8 @@
  */
 package pkg4atema2caamal;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author m
@@ -154,15 +156,19 @@ public class dlgAproximaciones extends javax.swing.JDialog {
     }//GEN-LAST:event_txtXiActionPerformed
 
     private void btnAproximacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAproximacionesActionPerformed
-       double Xi=Double.parseDouble(txtXi.getText().trim());
-       
+       try{ 
+        double Xi=Double.parseDouble(txtXi.getText().trim());       
         double Error=Double.parseDouble(txtError.getText().trim());
         int I=Integer.parseInt(txtIteraciones.getText().trim());
         ctrlAproximaciones ctrl = new ctrlAproximaciones(Xi,Error,I);
-        tablaAproximaciones tabla = ctrl.getTablaAproximaciones();
-        
+        tablaAproximaciones tabla = ctrl.getTablaAproximaciones();    
         this.tablaAproximaciones.setModel(tabla);
-        
+        }catch(IllegalArgumentException ex){ 
+             JOptionPane.showMessageDialog(null,"INGRESA LOS DATOS, POR FAVOR");
+             txtXi.setText(null);
+             txtError.setText(null);
+             txtIteraciones.setText(null);
+        }   
     }//GEN-LAST:event_btnAproximacionesActionPerformed
 
     /**

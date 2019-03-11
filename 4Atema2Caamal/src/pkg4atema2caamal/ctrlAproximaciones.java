@@ -6,6 +6,7 @@
 package pkg4atema2caamal;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -49,7 +50,9 @@ public class ctrlAproximaciones {
             
             listaSoluciones.add(fila);
             i++;
-        
+            if(i>this.iteraciones && errorCalculado>this.errorDeseado){
+                 JOptionPane.showMessageDialog(null,"NO SE HA ENCONTRADO UNA SOLUCIÓN... \nINGRESE UN NÚMERO MAYOR DE: 'MÁX. ITERACION'");    
+            }
         
         }
    

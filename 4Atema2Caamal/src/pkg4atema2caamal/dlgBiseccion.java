@@ -5,6 +5,8 @@
  */
 package pkg4atema2caamal;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author m
@@ -178,13 +180,21 @@ public class dlgBiseccion extends javax.swing.JDialog {
     }//GEN-LAST:event_txtXsActionPerformed
 
     private void btnBiseccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBiseccionActionPerformed
-        double Xi=Double.parseDouble(txtXi.getText().trim());
-        double Xs=Double.parseDouble(txtXs.getText().trim());
-        double Error=Double.parseDouble(txtError.getText().trim());
-        int I=Integer.parseInt(txtIteraciones.getText().trim());
-        ctrlBiseccion ctrl = new ctrlBiseccion(Xi,Xs,Error,I);
-        tablaBiseccion tabla = ctrl.geTablaBiseccion();
-        this.tablaBiseccion.setModel(tabla);
+        try{
+            double Xi=Double.parseDouble(txtXi.getText().trim());
+            double Xs=Double.parseDouble(txtXs.getText().trim());
+            double Error=Double.parseDouble(txtError.getText().trim());
+            int I=Integer.parseInt(txtIteraciones.getText().trim());
+            ctrlBiseccion ctrl = new ctrlBiseccion(Xi,Xs,Error,I);
+            tablaBiseccion tabla = ctrl.geTablaBiseccion();
+            this.tablaBiseccion.setModel(tabla);
+         }catch(IllegalArgumentException ex){ 
+             JOptionPane.showMessageDialog(null,"INGRESA LOS DATOS, POR FAVOR");
+             txtXi.setText(null);
+             txtXs.setText(null);
+             txtError.setText(null);
+             txtIteraciones.setText(null);
+         }
     }//GEN-LAST:event_btnBiseccionActionPerformed
 
     /**

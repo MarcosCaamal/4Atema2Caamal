@@ -5,6 +5,8 @@
  */
 package pkg4atema2caamal;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author m
@@ -130,14 +132,20 @@ public class dlgNewton extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnNewtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewtonActionPerformed
+        try{
         double Xi=Double.parseDouble(txtXi.getText().trim());
-       
         double Error=Double.parseDouble(txtError.getText().trim());
         int I=Integer.parseInt(txtIteraciones.getText().trim());
         ctrlNewton ctrl = new ctrlNewton(Xi,Error,I);
         tablaNewton tabla = ctrl.getTablaNewton();
         
         this.tablaNewton.setModel(tabla);
+        }catch(IllegalArgumentException ex){ 
+            JOptionPane.showMessageDialog(null,"INGRESA LOS DATOS, POR FAVOR");
+             txtXi.setText(null);
+             txtError.setText(null);
+             txtIteraciones.setText(null);
+        }
     }//GEN-LAST:event_btnNewtonActionPerformed
 
     /**
