@@ -55,14 +55,6 @@ public class dlgSecante extends javax.swing.JDialog {
         lblIteraciones.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblIteraciones.setText("Max. Iteraciones:");
 
-        txtX0.setBackground(new java.awt.Color(255, 255, 204));
-
-        txtX1.setBackground(new java.awt.Color(255, 255, 204));
-
-        txtError.setBackground(new java.awt.Color(255, 255, 204));
-
-        txtIteraciones.setBackground(new java.awt.Color(255, 255, 204));
-
         btnSecante.setBackground(new java.awt.Color(102, 255, 204));
         btnSecante.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
         btnSecante.setText("Calcular");
