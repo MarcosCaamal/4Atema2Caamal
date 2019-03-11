@@ -82,23 +82,17 @@ public class dlgBiseccion extends javax.swing.JDialog {
         lblIeraciones.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblIeraciones.setText("Max. Iteraciones: ");
 
-        txtXi.setBackground(new java.awt.Color(255, 255, 204));
         txtXi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtXiActionPerformed(evt);
             }
         });
 
-        txtXs.setBackground(new java.awt.Color(255, 255, 204));
         txtXs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtXsActionPerformed(evt);
             }
         });
-
-        txtError.setBackground(new java.awt.Color(255, 255, 204));
-
-        txtIteraciones.setBackground(new java.awt.Color(255, 255, 204));
 
         tablaBiseccion.setBackground(new java.awt.Color(204, 204, 204));
         tablaBiseccion.setModel(new javax.swing.table.DefaultTableModel(
