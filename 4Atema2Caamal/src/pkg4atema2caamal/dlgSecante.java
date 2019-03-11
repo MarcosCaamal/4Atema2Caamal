@@ -63,6 +63,7 @@ public class dlgSecante extends javax.swing.JDialog {
             }
         });
 
+        tablaSecante.setBackground(new java.awt.Color(204, 204, 204));
         tablaSecante.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -74,6 +75,8 @@ public class dlgSecante extends javax.swing.JDialog {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tablaSecante.setShowHorizontalLines(false);
+        tablaSecante.setShowVerticalLines(false);
         jScrollPane1.setViewportView(tablaSecante);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

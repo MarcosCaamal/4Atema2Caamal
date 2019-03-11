@@ -58,6 +58,7 @@ public class dlgNewton extends javax.swing.JDialog {
             }
         });
 
+        tablaNewton.setBackground(new java.awt.Color(204, 204, 204));
         tablaNewton.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -69,6 +70,8 @@ public class dlgNewton extends javax.swing.JDialog {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tablaNewton.setShowHorizontalLines(false);
+        tablaNewton.setShowVerticalLines(false);
         jScrollPane1.setViewportView(tablaNewton);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

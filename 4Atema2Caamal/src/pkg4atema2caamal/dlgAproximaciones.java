@@ -79,6 +79,8 @@ public class dlgAproximaciones extends javax.swing.JDialog {
             }
         });
 
+        tablaAproximaciones.setAutoCreateRowSorter(true);
+        tablaAproximaciones.setBackground(new java.awt.Color(204, 204, 204));
         tablaAproximaciones.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -90,6 +92,9 @@ public class dlgAproximaciones extends javax.swing.JDialog {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tablaAproximaciones.setEnabled(false);
+        tablaAproximaciones.setShowHorizontalLines(false);
+        tablaAproximaciones.setShowVerticalLines(false);
         jScrollPane2.setViewportView(tablaAproximaciones);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
